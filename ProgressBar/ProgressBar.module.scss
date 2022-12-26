@@ -1,0 +1,35 @@
+@import "@/styles/vars.scss";
+
+.outer {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: $x4 0;
+  width: 336px;
+  height: $x1;
+  border-radius: $x2;
+  background-color: $lightgrey;
+}
+
+.inner {
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: $x1;
+  background-color: $red;
+  transition: width 0.6s ease, background-color 0.6s ease;
+}
+
+.progressBarMessage {
+  display: block;
+  margin: 10px 0 32px;
+  text-align: center;
+}
+
+.value {
+  position: absolute;
+  bottom: 80px;
+  right: 13px;
+  font-size: 10px;
+  line-height: 18px;
+}
